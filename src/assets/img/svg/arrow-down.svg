@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_465" data-name="Rectángulo 465" width="16" height="16" transform="translate(20 21) rotate(180)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="flecha-modulos" transform="translate(24 24) rotate(180)">
+    <path id="Trazado_285" data-name="Trazado 285" d="M12,23.5A11.5,11.5,0,1,0,.5,12,11.5,11.5,0,0,0,12,23.5Z" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="Grupo_465" data-name="Grupo 465" clip-path="url(#clip-path)">
+      <path id="Trazado_286" data-name="Trazado 286" d="M11.47,5.214,6.708,9.976A.745.745,0,1,0,7.762,11.03l3.494-3.494v8.524a.744.744,0,1,0,1.488,0V7.536l3.494,3.494a.747.747,0,0,0,1.274-.524.721.721,0,0,0-.22-.524L12.53,5.22A.746.746,0,0,0,11.47,5.214Z"/>
+      <path id="Trazado_287" data-name="Trazado 287" d="M12,17.78a.744.744,0,1,0,.744.744A.744.744,0,0,0,12,17.78Z"/>
+    </g>
+  </g>
+</svg>

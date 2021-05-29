@@ -1,0 +1,484 @@
+@import "fonts.scss";
+@import "navbar.scss";
+@import "sidebar.scss";
+@import "forms.scss";
+
+body {
+    margin: 0;
+    font-family: "Mont-Regular";
+    color: #4f4f4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.margin-fix-15 {
+    margin-left: -15px;
+}
+
+.admin {
+    background-image: linear-gradient(to bottom, #03002b, #03002b80),
+        url("../img/bg-login.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.activeButton {
+    background: #b38a58;
+    color: #ffffff;
+}
+
+.inactiveButton {
+    background: #03002b;
+    color: #ffffff;
+}
+
+.administratorButton {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.53);
+    border-radius: 2px;
+    outline: none;
+    font-family: "Mont-Bold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.teacherButton {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.53);
+    border-radius: 2px;
+    outline: none;
+    font-family: "Mont-Bold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.adminLogo {
+    img {
+        width: 250px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.addButton button {
+    color: #f2f2f2;
+    font-size: 15px;
+    border: 1px solid #b38a58;
+    cursor: pointer;
+    background-color: #b38a58;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.saveCourseButton {
+    color: #f2f2f2;
+    font-size: 15px;
+    border: 1px solid #b38a58;
+    cursor: pointer;
+    background-color: #b38a58;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.addButton button:hover,
+.addButton button:active,
+.addButton button:focus,
+.addButton button:focus-within,
+.addButton button:not(:disabled):not(.disabled):active {
+    background-color: #bdbdbd;
+}
+
+.section_title {
+    h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #03002b;
+        font-family: "Mont-Bold";
+    }
+}
+
+.category_collapse {
+    margin: 30px 5px 30px 0px;
+}
+
+.category_collapse_area h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #4f4f4f;
+    margin: 10px 0 10px 0;
+}
+
+.category_collapse_area input {
+    width: 437px;
+    height: 29px;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.category_collapse_area {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.filters {
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #4f4f4f;
+        margin-right: 8px;
+    }
+}
+
+.insideTableSection {
+    background: #ffffff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.filterButton button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #4f4f4f;
+    font-weight: 600;
+}
+
+.filterButton button:hover,
+.filterButton button:active {
+    background: none;
+    border: none;
+    outline: none;
+    color: #4f4f4f;
+}
+
+.allButton {
+    color: #b38a58;
+    font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+    font-style: normal;
+}
+
+.allButton:hover,
+.allButton:active {
+    text-decoration: underline;
+    border: none;
+    outline: none;
+}
+
+.addRemoveButton {
+    color: #b38a58;
+    font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.addRemoveButton:hover,
+.addRemoveButton:active {
+    text-decoration: underline;
+    border: none;
+    outline: none;
+}
+
+.addRemoveButton:focus {
+    border: none;
+    outline: none;
+}
+
+.editProfile {
+    font-family: "Mont-Semi-Bold-Italic";
+    color: #03002B;
+    font-style: bold;
+    font-size: 13px;
+    background: none;
+    border: none;
+    outline: none;
+    font-style: italic;
+}
+
+.editProfile:hover,
+.editProfile:active {
+    text-decoration: underline;
+    border: none;
+    outline: none;
+}
+
+.editProfile:focus {
+    border: none;
+    outline: none;
+}
+
+.rowCategory {
+    padding: 20px 0px;
+    border-bottom: solid 1px #bdbdbd;
+}
+
+.restoreTrash {
+    color: #b38a58;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.deletePermanently {
+    font-style: italic;
+    cursor: pointer;
+}
+
+.sendToTrash {
+    cursor: pointer;
+}
+
+.loginBox {
+    background: #03002b;
+    margin: 0 auto;
+    border-radius: 0px 2px 2px 2px;
+    width: 100%;
+
+    h5 {
+        font-family: "Mont-Bold";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 130.7%;
+        color: #b38a58;
+        margin: 50px 0 30px 0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        background: #f2f2f2;
+        border: 1px solid #bdbdbd;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: normal;
+        border-radius: 3px;
+        width: 100%;
+        height: 45px;
+    }
+
+    .insidePadding {
+        padding: 20px 35px;
+    }
+
+    #rememberme {
+        align-self: normal;
+    }
+
+    label {
+        color: #ffffff;
+    }
+}
+
+input[type="text"] {
+    font-family: "Mont-Regular";
+    font-size: 12px;
+}
+
+input:focus {
+    outline: solid 1px #b38a58;
+}
+
+textarea:focus {
+    outline: solid 1px #b38a58;
+}
+
+.text-button {
+    font-family: "Mont-Bold";
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #03002b;
+    padding: 0px;
+}
+
+.btn-box {
+    button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 600;
+        color: #03002b;
+    }
+}
+
+.gold-H2 {
+    color: #b38a58;
+    font-size: 24px;
+    font-family: "Mont-Bold";
+}
+
+.gold-H4 {
+    color: #b38a58;
+    font-size: 16px;
+    font-family: "Mont-Bold";
+}
+
+.createButton {
+    background-color: #03002b;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Mont-Bold";
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 5px 15px;
+}
+
+.saveModule {
+    background-color: #03002b;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 5px 15px;
+    float: right;
+}
+
+.submitCourseButton {
+    width: 100vh;
+    background: #b38a58;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.borderDivision {
+    padding-bottom: 25px;
+    border-bottom: solid 1px #e0e0e0;
+}
+
+/* <-------BUTTON-------> */
+
+.btn__primary {
+    color: #f2f2f2;
+    font-size: 15px;
+    width: 160px;
+    height: 34px;
+    border: 1px solid #b38a58;
+    cursor: pointer;
+    text-align: center;
+    background-color: #b38a58;
+    margin: 0 20px 4px 0px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.btn__primary--admin {
+    margin: 0px 0px 0px 25px;
+}
+
+
+/* <-------ANIMATION-------> */
+
+.btn__primary--fix:hover {
+    background-color: #b38a58;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #b38a58;
+}
+
+.btn__primary:hover {
+    background-color: #b38a58;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #b38a58;
+}
+
+.btn__primary--login:hover {
+    border: 1px solid #b38a58;
+}
+
+.table thead th {
+    font-family: "Mont-Bold";
+    font-weight: bold;
+    font-size: 14px;
+    color: #03002b;
+}
+
+.table td{
+    font-family: "Mont-Regular";
+    font-weight: normal;
+    font-size: 13px;
+    color: #4F4F4F;
+}
+
+.editor {
+    height: 150px !important;
+    border: 1px solid #bdbdbd !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+
+.editor-red {
+    height: 150px !important;
+    border: 1px solid red !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+
+.error-message {
+    display: none;
+}
+
+.error-message__visible {
+    display: block;
+    font-size: 0.75rem;
+    margin: 0;
+    color: red;
+}
+
+input.red,
+textarea.red {
+    border: solid red 1px;
+}
+
+.fix-buttons-add-save {
+    margin-top: -76px;
+    margin-bottom: 20px;
+}
+
+.discount-row {
+    font-size: 13px;
+}

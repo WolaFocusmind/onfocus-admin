@@ -1,0 +1,89 @@
+.addForms {
+
+    h3.formTitle {
+        font-family: 'Mont-Bold';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        color: #B38A58;
+    }
+
+    input, select  {
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        border-radius: 2px;
+        height: 29px;
+        width: 90%;
+    }
+
+    textarea {
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 90%;
+        height: 110px;
+    }
+
+    label {
+        font-family: "Mont-Semi-Bold";
+        font-size: 15px;
+        color: #4F4F4F;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .photoTitle {
+        color: #B38A58;
+        font-weight: 700;
+    }
+
+    .recomendedText {
+        font-style: italic;
+    }
+
+    .searchInput {
+        width: 100%;
+        height: 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.22);
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    .inner-addon {
+        position: relative;
+    }
+
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+
+    .left-addon .glyphicon {
+        left: 0px;
+    }
+
+    .right-addon .glyphicon {
+        right: 0px;
+    }
+
+    .left-addon input {
+        padding-left: 30px;
+    }
+
+    .right-addon input {
+        padding-right: 30px;
+    }
+
+    .socialLogo {
+        margin-right: 8px;
+        width: auto;
+    }
+
+    .rowSeparator {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
